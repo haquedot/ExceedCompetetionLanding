@@ -2,6 +2,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+    color: #000958;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
 .primary-btn {
     display: inline-flex;
     padding: 12px 32px;
@@ -90,8 +99,191 @@ select {
     border: 1px solid #707070;
 }
 
+#about {
+    padding: 100px 0px;
+}
+
+#about p {
+    color: #707070;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#bestChoice {
+    padding: 100px 0px;
+}
+
+#bestChoice h2 {
+    color: #0F394C;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 31px;
+}
+
+#bestChoice h2 span {
+    color: #34A2F1;
+}
+
+#bestChoice .feature-box {
+    padding: 10px;
+    text-align: center;
+}
+
+#bestChoice .feature-box img {
+    margin-bottom: 18px;
+}
+
+#bestChoice .feature-box h5 {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    margin-bottom: 14px;
+}
+
+#bestChoice .feature-box p {
+    color: #707070;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.1px;
+}
+
+
+#bestChoice .owl-dots .owl-dot {
+    border: 2px solid #34A2F1 !important;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+}
+
+#bestChoice .owl-dots .active {
+    background-color: #34A2F1 !important;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+}
+
+
+#gallery {
+    position: relative;
+    padding: 0 12px;
+}
+
+#gallery .gallery-title {
+    color: #F18234;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#gallery .gallery-carousel {
+    position: relative;
+}
+
+#gallery .gallery-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#gallery .gallery-carousel .item img {
+    max-height: 668px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+#gallery .gallery-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#gallery .gallery-carousel .owl-nav button {
+    background: #FFF !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 48px;
+    width: 48px;
+    font-size: 48px !important;
+    color: #F18234 !important;
+    border: none;
+    border-radius: 50% !important;
+}
+
+#gallery .gallery-carousel .owl-nav button.owl-prev {
+    margin-left: -24px;
+}
+
+#gallery .gallery-carousel .owl-nav button.owl-next {
+    margin-right: -24px;
+}
+
+
+#gallery .eclipse {
+    position: relative;
+    height: 30px;
+    background: #FFF;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#gallery .top-eclipse {
+    margin-bottom: -15px;
+}
+
+#gallery .bottom-eclipse {
+    margin-top: -15px;
+}
+
+#gallery .eclipse:before,
+#gallery .eclipse:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+}
+
+#gallery .eclipse:before {
+    top: -50%;
+}
+
+#gallery .eclipse:after {
+    bottom: -50%;
+}
+
+
 
 @media (min-width: 768px) {
+    h2 {
+        color: #000;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
     .primary-btn {
         width: fit-content;
     }
@@ -104,12 +296,12 @@ select {
     }
 
     #hero .hero-heading {
-        max-width: 712px;
         background: none;
         padding: 0;
     }
 
     #hero h1 {
+        max-width: 712px;
         text-align: left;
         font-size: 48px;
         font-weight: 700;
@@ -135,4 +327,56 @@ select {
         font-size: 22px;
         font-weight: 600;
     }
+
+    #about p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #bestChoice h2 {
+        color: #580000;
+        font-size: 32px;
+        letter-spacing: -0.32px;
+    }
+
+
+    #gallery .gallery-carousel .owl-nav button {
+        background: #FFF !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 74px;
+        width: 74px;
+        font-size: 74px !important;
+        color: #F18234 !important;
+        border: none;
+        border-radius: 50% !important;
+    }
+
+    #gallery .gallery-carousel .owl-nav button.owl-prev {
+        margin-left: -36px;
+    }
+
+    #gallery .gallery-carousel .owl-nav button.owl-next {
+        margin-right: -36px;
+    }
+
+    #gallery .eclipse {
+        position: relative;
+        height: 50px;
+        background: #FFF;
+        overflow: hidden;
+        border-radius: 50%;
+        z-index: 3;
+    }
+
+    #gallery .top-eclipse {
+        margin-bottom: -25px;
+    }
+
+    #gallery .bottom-eclipse {
+        margin-top: -25px;
+    }
+
+
 }
