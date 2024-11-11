@@ -469,9 +469,9 @@ h2 {
 
     #contact {
         background: url('images/contact_bg.png') no-repeat center center/cover;
-        height: 100vh;
         display: flex;
         align-items: center;
+        padding: 96px 0;
     }
 
     #contact form {
